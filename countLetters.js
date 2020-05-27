@@ -13,8 +13,8 @@ const countLetters = function(word) {
   let numOfEachLetter = {};
   for (let letter of word) {
     if (letter === ' ') {
-    } 
-    else if (!numOfEachLetter[letter]) {
+      continue;
+    } else if (!numOfEachLetter[letter]) {
       numOfEachLetter[letter] = 1;
     } else {
       numOfEachLetter[letter] += 1;
@@ -25,3 +25,5 @@ const countLetters = function(word) {
 
 
 console.log(countLetters('lighthouse labs is super chill'));
+
+assertEqual(countLetters('yooo').y, 1);
