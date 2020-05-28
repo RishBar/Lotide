@@ -1,4 +1,4 @@
-var planetMoons = {
+let planetMoons = {
   mercury: 0,
   venus: 0,
   earth: 1,
@@ -9,7 +9,7 @@ var planetMoons = {
   neptune: 14
 };
 
-for (var planet in planetMoons) {
-  var numberOfMoons = planetMoons[planet];
-  console.log("Planet: " + planet + ", # of Moons: "+ numberOfMoons);
+for (let planet in planetMoons) {
+  let numberOfMoons = planetMoons[planet];
+  console.log("Planet: " + planet + ", # of Moons: " + numberOfMoons);
 }
