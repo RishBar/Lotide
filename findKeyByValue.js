@@ -14,10 +14,6 @@ const findKeyByValue = function(obj, value) {
   }
 };
 
-
-
-
-
 const bestTVShowsByGenre = {
   sciFi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
