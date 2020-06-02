@@ -1,15 +1,10 @@
-let planetMoons = {
-  mercury: 0,
-  venus: 0,
-  earth: 1,
-  mars: 2,
-  jupiter: 67,
-  saturn: 62,
-  uranus: 27,
-  neptune: 14
+const titleCase  = function(text) {
+  text = text.toLowerCase();
+  let textArray = text.split(' ');
+  for (let i in textArray) {
+    textArray[i] = textArray[i].charAt(0).toUpperCase() + textArray[i].slice(1);
+  }
+  return textArray.join(' ');
 };
 
-for (let planet in planetMoons) {
-  let numberOfMoons = planetMoons[planet];
-  console.log("Planet: " + planet + ", # of Moons: " + numberOfMoons);
-}
+console.log(titleCase('yo dawg get the bread'));

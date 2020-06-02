@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@rishavbaral/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lodash-like library, helpful functions",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/RishBar/Lotide.git"
   },
-  "author": "",
+  "author": "Rishav Baral",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RishBar/Lotide/issues"
