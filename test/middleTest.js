@@ -1,7 +1,14 @@
-const assertEqual = require('../assertEqual');
-const middle = require('../middle');
-const eqArrays = require('../eqArrays');
+const assert = require('chai').assert;
+const middle   = require('../middle');
 
-assertEqual(eqArrays(middle([1, 2, 3, 4]), [2, 3]), true); // => [2, 3]
-assertEqual(eqArrays(middle([1, 2, 3, 4, 5]), [3]), true); // => [3, 4]
-assertEqual(eqArrays(middle([1]), []), true);
+describe("#middle", () => {
+  it("returns [2] for [1, 2, 3]", () => {
+    assert.deepEqual(middle([1, 2, 3]), [2]);
+  });
+  it("returns [] for [5]", () => {
+    assert.deepEqual(middle([5]), []);
+  });
+  it("returns [5,6] for [5,4,5,6,7,3]", () => {
+    assert.deepEqual(middle([5,4,5,6,7,3]), [5,6]);
+  });
+});
